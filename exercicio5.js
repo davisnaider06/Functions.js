@@ -1,5 +1,11 @@
 function inverte (s) {
-    return s.split('').reverse().join('');
+    aux='';
+    i=0;
+    while (i<s.length) {
+        aux=s[i]+aux;
+        i++;
+    }
+    return aux;
 }
 i=inverte('ola');
 console.log("Invertido:", i);
